@@ -39,10 +39,10 @@ class ClientController {
         ctx.status(HttpStatus.CREATED_201)
     }
     fun getClientByDni(ctx: Context){
-        val dni = ctx.body<DataDni>()
+        val dni = ctx.pathParam("dni").toInt()
         var dataClient : DataClient
 
-        var client = veteApp.getClientById(dni.document)
+        var client = veteApp.getClientById(dni)
         dataClient = DataClient(client.name, client.lastname, client.address, client.email, client.telephone, client.dni)
 
         ctx.json(dataClient)

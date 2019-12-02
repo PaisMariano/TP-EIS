@@ -34,7 +34,9 @@ fun main() {
             }
         }
         path("client_by_dni") {
-            get(clientController::getClientByDni)
+            path(":dni"){
+                get(clientController::getClientByDni)
+            }
         }
         path("clients_by_name") {
             path(":name") {

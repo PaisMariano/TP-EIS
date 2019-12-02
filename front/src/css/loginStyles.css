@@ -11,7 +11,6 @@
 
 .formRegister{
     display: flex;
-
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -20,6 +19,7 @@
     width: 70vw;
     height: 70vh;
     margin-top: 2%;
+    
 }
 
 .rowfilds{
@@ -30,12 +30,22 @@
     width: 100%;
 }
 
+.rowBuscar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
  .fieldForm, .submitRegister{
     padding: 1.5%;
     margin-top: 3%;
     border: 1px solid #222222;
 }
+.fixedFirstForm{
 
+}
 .fieldForm{
     color:rgb(15, 114, 76);
     background:#23D7BC;
@@ -65,6 +75,8 @@
     color: #69D5C7;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    height: 50vmax;
+  
 }
 
 .nuevaMascota{
@@ -195,6 +207,33 @@ ul li {
     margin-bottom: 0%;
 
 }
+
+.inputBuscar{
+    color: rgb(15, 114, 76);
+    background: #FFFBFA;
+    width: 40%;
+    padding: 1.5%;
+    border: 1px solid #222222;
+    border-color: #4CF5DE;
+    margin-right: 2%;
+}
+
+.buscarClient{
+    border: 2px solid rgb(15, 114, 76);
+    color: rgb(30, 182, 159);
+    background: #99EBDD;
+
+
+    padding: 0.8%;
+    border-radius: 8px;
+    width: 15%;
+    margin: 2% 0% 2% 0%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #4CF5DE;
+}
+
 .contenedor .box{
     background-color: #bbb;
     width: 250px;

@@ -1,7 +1,7 @@
 import React          from 'react';
 import { withRouter } from 'react-router';
 import                '../css/navStyles.css';
-
+import {getClients} from "../Api";
 
 class Nav extends React.Component {
 
@@ -9,8 +9,10 @@ class Nav extends React.Component {
         super(props);
 
         this.state = {
-            text: '',
+            text: ''
+           
         }
+    
     }
 
 
@@ -19,7 +21,10 @@ class Nav extends React.Component {
     render() {
         return (
             <div className="containerNav">
+              <div>
                 <p className="titleNav">ADMINISTRACIÓN DE REGISTROS</p>
+                    <br/> 
+                 </div> 
             </div>
         );
     }

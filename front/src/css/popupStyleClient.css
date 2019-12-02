@@ -1,0 +1,62 @@
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: #99EBDD;
+    margin-left: 11%;
+}
+
+.elementRow{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px #20D7BB solid;
+    border-bottom: 1px #20D7BB solid;
+    padding: 1% 0% 1% 0%;
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    background: #ffffff;
+}
+
+.elementHeader{
+    font-weight: bold;
+    background: rgba(255, 255, 255,0.5);
+}
+
+.containerVer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+}
+
+.ver{
+    width: 50%;
+    padding: 1%;
+    border-radius: 8px;
+    margin: 2% 0% 2% 0%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #4CF5DE;
+    background: #20D7BB;
+    color: #FFFBFA;
+}
+
+.cancelarClient{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.rowHeader{
+    margin-top: 3%;
+}
+
+.ver:hover{
+    border: 2px solid #20D7BB;
+    color: #69D5C7;
+    background: #FFFDFF;
+}

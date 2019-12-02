@@ -12,7 +12,7 @@ render(){
       <div className="root">
         <BrowserRouter>
           <Switch>
-            <Route path="/" render={props => <div><Nav {...props} /><Register {...props} /> </div>} />
+              <Route path="/" component={Register} />
           </Switch>
         </BrowserRouter>
       </div>
